@@ -8,25 +8,29 @@
     <title>Exchange Rates - r-argentinaPrograma-clase12</title>
 </head>
 <body>
-<div class="left">
-    <h1 class="title">Exchange Rates App</h1>
-</div>
- <div class="right">
-     <div class="exchange-panel">
-        <input type="number" placeholder="100" id="base-amount">
-         <select class="base-currency">
-             <option value="0">Select base currency</option>
-         </select>
-
-        <input type="number" placeholder="100" id='results'>
-        <select class="target-currency">
-            <option value="0">Select target currency</option>
-        </select>
-     </div>
- </div>
+    <div class="main-container">
+        <div class="left">
+            <h1 class="title">Exchange Rates App</h1>
+            <p>Select a base currency to generate an exchange rates table for it. After selecting your target currency just type the amount you'd like to convert. The amount will be displayed as you type.</p>
+            <div class="right">
+                <div class="exchange-panel">
+                    <select class="base-currency">
+                        <option value="0">Select base currency</option>
+                    </select>
+                    <input type="number" placeholder="100" id="base-amount">
+                    <select class="target-currency">
+                        <option value="0">Select target currency</option>
+                    </select>
+                    <input type="number" placeholder="100" id='results'>
+                </div>
+            </div>
+            <div>
+                <p>Exchange and currency taken from <a href="https://www.exchangerate-api.com/">ExchangeRate-API</a> strictly for learning purposes only.</p>
+             </div>
+        </div>
  <div class="currency-rates">
-     <p>Exchange rate for <b id="base-currency">...</b> as of <b id="current-date">...</b>.</p>
      <table class="table">
+        <h2>Exchange rates for <b id="base-currency">...</b> as of <b id="current-date">...</b>.</h2>
          <thead>
              <tr>
                 <th id='table-currency-code-title'>Currency Code</th>
@@ -36,9 +40,9 @@
          </thead>
          <tbody id="currency-table">
          </tbody>
-
     </table>
  </div>
+</div>
  <script src="./src/index.js" type="module"></script> 
 </body>
 </html>
