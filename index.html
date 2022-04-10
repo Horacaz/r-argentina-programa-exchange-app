@@ -13,16 +13,16 @@
             <h1 class="title">Exchange Rates App</h1>
             <p>Select a base currency to generate an exchange rates table for it. After selecting your target currency just type the amount you'd like to convert. The amount will be displayed as you type.</p>
             <div class="right">
-                <div class="exchange-panel">
+                <form class="exchange-panel">
                     <select class="base-currency">
                         <option value="0">Select base currency</option>
                     </select>
-                    <input type="number" placeholder="100" id="base-amount">
+                    <label for="base-amount"></label><input type="number" placeholder="100" id="base-amount">
                     <select class="target-currency">
                         <option value="0">Select target currency</option>
                     </select>
-                    <input type="number" placeholder="100" id='results'>
-                </div>
+                    <label for="results"></label><input type="number" placeholder="100" id='results'>
+                </form>
             </div>
             <div>
                 <p>Exchange and currency taken from <a href="https://www.exchangerate-api.com/">ExchangeRate-API</a> strictly for learning purposes only.</p>

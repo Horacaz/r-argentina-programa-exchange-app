@@ -80,7 +80,9 @@ body{
 h2{
     font-weight: normal;
 }
-
+label {
+    display: none;
+}
 @media (max-width: 800px){
     .main-container{
         flex-direction: column;
